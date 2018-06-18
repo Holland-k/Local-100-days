@@ -1,0 +1,69 @@
+
+Collatz Conjecture - Start with a number n > 1. Find the number of steps it takes to reach one using the following process: If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1. 
+
+---------------------------------------------------------------------
+
+*** Complete *** Sieve of Eratosthenes - The sieve of Eratosthenes is one of the most efficient ways to find all of the smaller primes (below 10 million or so). 
+
+---------------------------------------------------------------------
+
+Dijkstra’s Algorithm - Create a program that finds the shortest path through a graph using its edges.
+
+---------------------------------------------------------------------
+
+RSS Feed Creator - Given a link to RSS/Atom Feed, get all posts and display them.
+
+---------------------------------------------------------------------
+
+Post it Notes Program - A program where you can add text reminders and post them. Optional: You can have the program also add popup reminders.
+
+---------------------------------------------------------------------
+
+Quote Tracker (market symbols etc) - A program which can go out and check the current value of stocks for a list of symbols entered by the user. The user can set how often the stocks are checked. For CLI, show whether the stock has moved up or down. Optional: If GUI, the program can show green up and red down arrows to show which direction the stock value has moved.
+
+---------------------------------------------------------------------
+
+Bulk Thumbnail Creator - Picture processing can take a bit of time for some transformations. Especially if the image is large. Create an image program which can take hundreds of images and converts them to a specified size in the background thread while you do other things. For added complexity, have one thread handling re-sizing, have another bulk renaming of thumbnails etc.
+
+---------------------------------------------------------------------
+
+Page Scraper - Create an application which connects to a site and pulls out all links, or images, and saves them to a list. Optional: Organize the indexed content and don’t allow duplicates. Have it put the results into an easily searchable index file. 
+
+---------------------------------------------------------------------
+
+Fetch Current Weather - Get the current weather for a given zip/postal code. Optional: Try locating the user automatically.
+
+---------------------------------------------------------------------
+
+Create Zip File Maker - The user enters various files from different directories and the program zips them up into a zip file. Optional: Apply actual compression to the files. Start with Huffman Algorithm.
+
+---------------------------------------------------------------------
+
+Do the file diff tool.
+If that is done, do a wrapper of directory diff over that.
+Show stats like equal files/directories, in size, in content, etc.
+Use appropriate algorithms like LCS/ LIS.
+For example, see KDiff3 tool.
+
+---------------------------------------------------------------------
+
+25: Checkers / Draughts
+YouTube link of a Checkers game.
+
+Description: A player moves their pieces diagonally on a board and tries to "jump" the opponent's pieces.
+
+Variants: Some variants are listed on the Wikipedia page for Draughts.
+
+---------------------------------------------------------------------
+
+26: Chess
+Description: Chess is a classic game, and the rules are explained on Wikipedia.
+
+Variants: Some variants are listed on the Wikipedia page for Chess Variants.
+
+---------------------------------------------------------------------
+
+27: Go
+Rules explained YouTube video show
+
+Description: Players take turns laying down stones and try to capture areas of the board. See the rules for full details. Even simple Go-playing AIs require deep levels of knowledge, but a two-player game is easy to create.
