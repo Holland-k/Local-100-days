@@ -2,11 +2,12 @@
 
 ### Day 0: June 18, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Implemented Sieve of Eratosthenes and the Collatz Conjecture. Did some work on the learn python challenge.
 
-**Thoughts:** 
+**Thoughts:** Array indexing gives me far more trouble than it should.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Sieve of Eratosthenes](https://github.com/Holland-k/100-days-of-code/tree/master/python/sieve)
+[Collatz Conjecture](https://github.com/Holland-k/100-days-of-code/tree/master/python/collatz)
 
 ### Day 1: June 19, 2018
 
