@@ -12,11 +12,13 @@
 
 ### Day 1: June 19, 2018
 
-**Today's Progress**: Started the diff program in python. File handling, args.
+**Today's Progress**: Started the diff program in python. File handling, args. Implemented bubble and merge sort in haskel (bubble was mostly directed by a blog post).
 
 **Thoughts:** More complicated than I initially suspected.
 
 **Link to work:** [Python Diff](https://github.com/Holland-k/Local-100-days/tree/master/python/diff_tool)
+
+[Haskell Sorts](https://github.com/Holland-k/Local-100-days/tree/master/haskell/sorts.hs)
 
 ### Day 2: June 20, 2018
 
