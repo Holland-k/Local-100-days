@@ -2,20 +2,21 @@
 
 ### Day 0: June 18, 2018
 
-**Today's Progress**: Implemented Sieve of Eratosthenes and the Collatz Conjecture. Did some work on the learn python challenge.
+**Today's Progress**: Implemented Sieve of Eratosthenes and the Collatz Conjecture. Did some work on the learn python challenge for the final day (not linked).
 
 **Thoughts:** Array indexing gives me far more trouble than it should.
 
 **Link to work:** [Sieve of Eratosthenes](https://github.com/Holland-k/100-days-of-code/tree/master/python/sieve)
+
 [Collatz Conjecture](https://github.com/Holland-k/100-days-of-code/tree/master/python/collatz)
 
 ### Day 1: June 19, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Started the diff program in python. File handling, args.
 
-**Thoughts:** 
+**Thoughts:** More complicated than I initially suspected.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Python Diff](https://github.com/Holland-k/Local-100-days/tree/master/python/diff_tool)
 
 ### Day 2: June 20, 2018
 
