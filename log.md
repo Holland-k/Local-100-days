@@ -22,11 +22,11 @@
 
 ### Day 2: June 20, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Started a memory game in python. Initialization and inputs. 
 
-**Thoughts:** 
+**Thoughts:** Creating multi-dimensional arrays in python took a lot more thought than expected.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Memory Game](https://github.com/Holland-k/Local-100-days/tree/master/python/memory)
 
 ### Day 3: June 21, 2018
 
