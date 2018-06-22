@@ -4,21 +4,50 @@ game = 1
 board = ['']
 diffc = -1
 
+def rand_arr(cur_arr):
+	i = len(cur_arr)-1
+	#print("starting array " + str(cur_arr) + " and i " + str(i))
+	while(i > 0):
+		j = random.randrange(0,i)
+		#print("j " + str(j) + " i " + str(i) + " cur array " + str(cur_arr))
+		cur_arr[j],cur_arr[i] = cur_arr[i],cur_arr[j]	
+		i -= 1
+	#print("ending array " + str(cur_arr))
+	return cur_arr
+
 def create_board(sizei):
 	global board
 	board.pop()
+	#initialize board
 	for i in range(0,sizei):
-		t = ['*']
+		t = [{"face":'*',"val":-1,"disc":False}]
 		for j in range(1,sizei):
-			t.append('*')
+			t.append({"face":'*',"val":-1,"disc":False})
 		board.append(t)
 
-	for i in range(0,(sizei*sizei)/2):
-		c.append(randrange(0,9))
+	j = 0
+	c = ['']
+	c.pop()
+	half = (sizei*sizei) / 2
+	for i in range(0,half):
+		c.append(j)
+		j += 1
+		if(j>9):
+			j = 0
 
-	for i in range(0,sizei)
+	#print("before rand " + str(c))
+	c = rand_arr(c)
+	print("after rand " + str(c))
+
+	k = 0
+	for i in range(0,sizei):
 		for j in range(0,sizei):
-			n = randrange(0,9)
+			board[i][j]["val"] = c[k]
+			k += 1
+			if(k >= half):
+				k = 0
+				c = rand_arr(c)
+				print("after next rand " + str(c))
 
 
 def start_game():
@@ -67,11 +96,31 @@ def print_board():
 	for i in range(0,n):
 		line = str(i+1) + " "
 		for j in range(0,n):
-			line = line + board[i][j] + " "
+			line = line + board[i][j]["face"] + " "
+		print line
+
+def print_board_cheater():
+	print("diff = " + str(diffc))
+	if diffc == 0:
+		n = 4
+	elif diffc == 1:
+		n = 10
+	else:
+		n = 50
+	line = "  "
+	for i in range(0,n):
+		print("n = " + str(n) + " i = " + str(i))
+		line = line + (chr(ord('A')+i) + " ")
+	print line
+	for i in range(0,n):
+		line = str(i+1) + " "
+		for j in range(0,n):
+			line = line + str(board[i][j]["val"]) + " "
 		print line
 
 start_game()
 while(game):
+	print("gaming")
 	print_board()
 	print("Choose two cards (a1 b1)")
 
@@ -83,6 +132,8 @@ while(game):
 		i = n.index(' ')
 		in1 = n[:i]
 		in2 = n[i+1:]
+		if(in1 == "cheat"):
+			print_board_cheater()
 		print(in1)
 		print(in2)
 	except ValueError:
