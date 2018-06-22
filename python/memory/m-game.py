@@ -1,3 +1,5 @@
+import random
+
 game = 1
 board = ['']
 diffc = -1
@@ -10,6 +12,14 @@ def create_board(sizei):
 		for j in range(1,sizei):
 			t.append('*')
 		board.append(t)
+
+	for i in range(0,(sizei*sizei)/2):
+		c.append(randrange(0,9))
+
+	for i in range(0,sizei)
+		for j in range(0,sizei):
+			n = randrange(0,9)
+
 
 def start_game():
 	global diffc
@@ -24,16 +34,18 @@ def start_game():
 			d = str(raw_input())
 			print("d = " + str(d))
 			if(d == 'E' or d == 'e' or d == "Easy" or d == "easy"):
-				print("checking e diffc = " + str(diffc))
+				#print("checking e diffc = " + str(diffc))
 				diffc = 0
-				print("diff c = " + str(diffc))
+				#print("diff c = " + str(diffc))
 				create_board(4)
 			elif(d == 'M' or d == 'm' or d == "Medium" or d == "medium"):
 				diffc = 1
 				create_board(10)
 			elif(d == 'H' or d == 'h' or d == "Hard" or d == "Hard"):
-				diffc = 2
-				create_board(50)
+				#diffc = 2
+				#create_board(50)
+				print("not implement yet, please try another difficulty")
+				raise ValueError
 			else:
 				raise ValueError
 		except ValueError:
