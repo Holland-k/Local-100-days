@@ -30,11 +30,11 @@
 
 ### Day 3: June 21, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Very little work on the memory game
 
-**Thoughts:** 
+**Thoughts:** Data structure isn't sufficient yet.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Memory Game](https://github.com/Holland-k/Local-100-days/tree/master/python/memory)
 
 ### Day 4: June 22, 2018
 
