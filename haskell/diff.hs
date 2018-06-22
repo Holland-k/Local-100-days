@@ -9,17 +9,14 @@ diffcheck l1 l2
 
 diffline [] ys = ys
 diffline xs [] = xs
-diffline (x:xs) (y:ys) = (diffcheck x y) : (diffline xs ys)
-
-diffcompare fa fb = 
-    diffline m n
-        where 
-            m = fromList (lines fa)
-            n = fromList (lines fb)
+diffline (x : xs) (y : ys) =
+    (diffcheck x y) : (diffline xs ys)
 
 main = do 
     [fa,fb] <- getArgs
     ta <- readFile fa
     tb <- readFile fb
-    (diffcompare ta tb)
-    print((show fa) ++ " " ++ (show fb))
+    let m = lines ta
+        n = lines tb
+        changes = diffline m n
+    print changes
