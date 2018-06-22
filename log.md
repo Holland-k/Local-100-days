@@ -38,11 +38,13 @@
 
 ### Day 4: June 22, 2018
 
-**Today's Progress**: 
+**Today's Progress**: More work on memory in python and diff in haskell.
 
-**Thoughts:** 
+**Thoughts:** Implemented a random sort in python. Stupid simple. Need to implement LCS... not so simple. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Memory Game](https://github.com/Holland-k/Local-100-days/tree/master/python/memory)
+
+[Haskell Diff](https://github.com/Holland-k/Local-100-days/blob/master/haskell/diff.hs)
 
 ### Day 5: June 23, 2018
 
