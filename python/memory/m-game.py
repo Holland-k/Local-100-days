@@ -4,6 +4,13 @@ game = 1
 board = ['']
 diffc = -1
 
+def check_for_win():
+	for i in range(0, len(board)):
+		for j in range(0, len(board)):
+			if(board[i][j]["disc"] == False):
+				return 0
+	return 1
+
 def rand_arr(cur_arr):
 	i = len(cur_arr)-1
 	#print("starting array " + str(cur_arr) + " and i " + str(i))
