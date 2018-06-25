@@ -62,3 +62,26 @@ grid x y = [(n,m) | n <- [0..x], m <- [0..y]]
 
 square :: Int -> [(Int,Int)]
 square a = [(b,c) | (b,c) <- grid a a, b /= c]
+
+-- problem 4
+
+replicate :: Int -> a -> [a]
+replicate n m = [m | _ <- [1..n]]
+
+-- problem 5
+
+pyths :: Int -> [(Int, Int, Int)]
+pyths a = [(m,n,p) | m <- [1..a], n <- [1..a], p <- [1..a], m^2 + n^2 == p^2]
+
+-- problem 6
+
+factors :: Int -> [Int]
+factors n = [x | x <- [1..n], n `mod` x == 0]
+
+perfects :: Int -> [Int]
+perfects x = [y | y <- [1..x], sum (factors y) - y == y]
+
+-- problem 9
+
+scalarproduct :: [Int] -> [Int] -> Int
+scalarproduct xs ys = sum [a*b | (a,b) <- zip xs ys]
