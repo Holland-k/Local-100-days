@@ -64,11 +64,13 @@
 
 ### Day 7: June 25, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Caesar cypher in Haskell. Memory game in python.
 
 **Thoughts:** 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Memory Game](https://github.com/Holland-k/Local-100-days/tree/master/python/memory)
+
+[Caesar Cypher](https://github.com/Holland-k/Local-100-days/blob/master/haskell/caesar.hs)
 
 ### Day 8: June 26, 2018
 
