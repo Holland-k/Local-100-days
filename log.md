@@ -48,19 +48,19 @@
 
 ### Day 5: June 23, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:**
 
 ### Day 6: June 24, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Working through exercises in the book Programming in Haskell.
 
-**Thoughts:** 
+**Thoughts:** Syntax is hard. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
 
 ### Day 7: June 25, 2018
 
