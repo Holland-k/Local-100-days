@@ -85,3 +85,20 @@ perfects x = [y | y <- [1..x], sum (factors y) - y == y]
 
 scalarproduct :: [Int] -> [Int] -> Int
 scalarproduct xs ys = sum [a*b | (a,b) <- zip xs ys]
+
+
+-- Exercises Ch 6
+
+-- problem 2
+sumdown :: Int -> Int
+sumdown 0 = 0
+sumdown n = n + sumdown (n-1)
+
+
+-- problem 4
+euclid :: Int -> Int -> Int
+euclid a 0 = 0
+euclid 0 b = 0
+euclid a b | a == b = a
+    | a > b = euclid (a - b) b 
+    | otherwise = euclid a (b - a)
