@@ -74,19 +74,19 @@
 
 ### Day 8: June 26, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None.
 
-**Thoughts:** 
+**Thoughts:** None.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** None.
 
 ### Day 9: June 27, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Worked on the mud area, and haskell high level functions.
 
-**Thoughts:** 
+**Thoughts:** Tired.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
 
 ### Day 10: June 28, 2018
 
