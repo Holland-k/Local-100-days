@@ -86,7 +86,6 @@ perfects x = [y | y <- [1..x], sum (factors y) - y == y]
 scalarproduct :: [Int] -> [Int] -> Int
 scalarproduct xs ys = sum [a*b | (a,b) <- zip xs ys]
 
-
 -- Exercises Ch 6
 
 -- problem 2
@@ -102,3 +101,19 @@ euclid 0 b = 0
 euclid a b | a == b = a
     | a > b = euclid (a - b) b 
     | otherwise = euclid a (b - a)
+
+-- Chapter 7
+
+-- problem 2
+
+my_all a = and . map a
+
+-- my_any :: (a -> Bool) -> [Bool] -> Bool
+my_any a = or . map a
+
+-- my_takeWhile :: (a -> Bool) -> [Bool] -> Bool
+my_takeWhile a = filter a
+
+my_dropWhile a [] = []
+my_dropWhile a (x:xs) | a x = my_dropWhile a xs
+    | otherwise = x:my_dropWhile a xs
