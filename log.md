@@ -90,11 +90,12 @@
 
 ### Day 10: June 28, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Haskell high level functions problems. Again.
 
-**Thoughts:** 
+**Thoughts:** I really need to practice lambda functions.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
+
 
 ### Day 11: June 29, 2018
 
