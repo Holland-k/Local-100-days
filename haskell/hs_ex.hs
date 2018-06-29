@@ -117,3 +117,17 @@ my_takeWhile a = filter a
 my_dropWhile a [] = []
 my_dropWhile a (x:xs) | a x = my_dropWhile a xs
     | otherwise = x:my_dropWhile a xs
+
+-- Problem 3
+
+mymap f = foldr (\x xs -> f x : xs) []
+
+myfilter f = foldr (\x xs -> if f x then x:xs else xs) []
+
+-- Problem 4
+dec2int :: [Int] -> Int
+dec2int = foldl (\x y -> 10*x + y) 0
+
+-- Problem 9
+-- altMap :: (a -> b) -> (a -> b) -> [a] -> [b]
+altMap a b = foldr (\x xs -> if odd x then (b x) : xs else (a x) : xs) []
