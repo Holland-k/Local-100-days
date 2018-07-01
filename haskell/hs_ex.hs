@@ -130,4 +130,21 @@ dec2int = foldl (\x y -> 10*x + y) 0
 
 -- Problem 9
 -- altMap :: (a -> b) -> (a -> b) -> [a] -> [b]
-altMap a b = foldr (\x xs -> if odd x then (b x) : xs else (a x) : xs) []
+altMap a b = foldr (\x xs -> if odd((length xs)+1) then (b x) : xs else (a x) : xs) []
+
+-- Problem 10
+luhnDouble :: Int -> Int
+luhnDouble x = if y > 9 then y - 9 else y 
+    where y = x * 2
+
+luhnSum :: [Int] -> Int
+luhnSum [] = 0
+luhnSum x = head x + (luhnSum (tail x))
+
+luhnCalc xs = if odd (length xs) 
+    then altMap luhnDouble (+0) xs -- Amex
+    else altMap (+0) luhnDouble (reverse xs) -- Others
+
+luhn x = if y `mod` 10 == 0 then True else False
+    where y = luhnSum (luhnCalc x)
+
