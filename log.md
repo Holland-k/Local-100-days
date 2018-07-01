@@ -99,27 +99,27 @@
 
 ### Day 11: June 29, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:**
 
 ### Day 12: June 30, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 13: July 1, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Luhn Algorithm in haskell
 
-**Thoughts:** 
+**Thoughts:** Not happy with the solution but it finally works. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
 
 ### Day 14: July 2, 2018
 
