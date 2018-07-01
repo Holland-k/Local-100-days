@@ -141,10 +141,12 @@ luhnSum :: [Int] -> Int
 luhnSum [] = 0
 luhnSum x = head x + (luhnSum (tail x))
 
+luhnCalc :: [Int] -> [Int]
 luhnCalc xs = if odd (length xs) 
     then altMap luhnDouble (+0) xs -- Amex
     else altMap (+0) luhnDouble (reverse xs) -- Others
 
+luhn :: [Int] -> Bool
 luhn x = if y `mod` 10 == 0 then True else False
     where y = luhnSum (luhnCalc x)
 
