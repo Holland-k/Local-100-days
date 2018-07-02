@@ -202,6 +202,17 @@ eval s (Equiv p q) = (eval s p) == (eval s q)
 isTaut :: Prop -> Bool
 isTaut p = and [eval s p | s <- substs p]
 
+-- Problem 1
+data Nat = Zero | Succ Nat deriving (Show)
+
+myadd :: Nat -> Nat -> Nat
+myadd Zero n = n
+myadd (Succ m) n = Succ (myadd m n)
+
+mymult :: Nat -> Nat -> Nat
+mymult Zero n = Zero
+mymult (Succ m) n = myadd (mymult m n) n
+
 -- Problem 3
 
 data Tree a = Leaf a | Node (Tree a) (Tree a) deriving (Show)
@@ -224,3 +235,30 @@ balance xs = Node (balance a) (balance b)
 
 -- Problem 8
 -- See above
+
+-- Problem 9 
+data Expr = Val Int 
+    | Add Expr Expr
+    | Mult Expr Expr deriving (Show)
+
+type Cont = [Op] 
+
+data Op = ADD Expr
+    | MULT Expr
+    | PLUS Int
+    | TIMES Int deriving (Show)
+
+meval :: Expr -> Cont -> Int
+meval (Val n) c = exec c n
+meval (Add x y) c = meval x (ADD y : c)
+meval (Mult x y) c = meval x (MULT y : c)
+
+exec :: Cont -> Int -> Int
+exec [] n = n
+exec (ADD y : c) n = meval y (PLUS n : c)
+exec (MULT y : c) n = meval y (TIMES n : c)
+exec (PLUS n : c) m = exec c (n + m)
+exec (TIMES n : c) m = exec c (n * m)
+
+value :: Expr -> Int
+value e = meval e []
