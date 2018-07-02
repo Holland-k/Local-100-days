@@ -155,7 +155,9 @@ data Prop = Const Bool
     | Var Char
     | Not Prop
     | And Prop Prop
+    | Or Prop Prop
     | Imply Prop Prop
+    | Equiv Prop Prop deriving (Show)
 
 type Assoc k v = [(k,v)]
 
@@ -177,7 +179,9 @@ vars (Const _) = []
 vars (Var x) = [x]
 vars (Not p) = vars p
 vars (And p q) = (vars p) ++ (vars q)
+vars (Or p q) = vars p ++ vars q
 vars (Imply p q) = vars p ++ vars q
+vars (Equiv p q) = vars p ++ vars q
 
 substs :: Prop -> [Subst]
 substs p = map (zip vrs) (bools (length vrs))
@@ -191,7 +195,32 @@ eval _ (Const b) = b
 eval s (Var x) = find x s
 eval s (Not p) = not (eval s p)
 eval s (And p q) = (eval s p) && (eval s q)
+eval s (Or p q) = (eval s p) || (eval s q)
 eval s (Imply p q) = (eval s p) <= (eval s q)
+eval s (Equiv p q) = (eval s p) == (eval s q)
 
 isTaut :: Prop -> Bool
 isTaut p = and [eval s p | s <- substs p]
+
+-- Problem 3
+
+data Tree a = Leaf a | Node (Tree a) (Tree a) deriving (Show)
+
+numLeaf :: Tree a -> Int
+numLeaf (Leaf a) = 1
+numLeaf (Node l r) = (numLeaf l) + (numLeaf r)
+
+balanced :: Tree a -> Bool
+balanced (Leaf a) = True
+balanced (Node l r) = abs ((numLeaf l) - (numLeaf r)) <= 1 &&
+    balanced l &&
+    balanced r
+
+-- Problem 4
+balance :: [a] -> Tree a
+balance [x] = Leaf x
+balance xs = Node (balance a) (balance b)
+    where (a,b) = halve xs 
+
+-- Problem 8
+-- See above
