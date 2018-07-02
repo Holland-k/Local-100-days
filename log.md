@@ -119,7 +119,7 @@
 
 **Thoughts:** Not happy with the solution but it finally works. 
 
-**Link to work:** Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
+**Link to work:** [Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
 
 ### Day 14: July 2, 2018
 
@@ -127,7 +127,7 @@
 
 **Thoughts:** Meh.
 
-**Link to work:** Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
+**Link to work:** [Haskell exercises](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hs_ex.hs)
 
 ### Day 15: July 3, 2018
 
