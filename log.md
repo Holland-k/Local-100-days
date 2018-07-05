@@ -135,23 +135,25 @@
 
 **Thoughts:** 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 16: July 4, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Lots of reading, not much coding. 
 
-**Thoughts:** 
+**Thoughts:** Started working through a new book, and spending time finding my place in it.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 17: July 5, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Towers of hanoi and a log parser with tree and ordering algo. 
 
-**Thoughts:** 
+**Thoughts:** Finally feel like I'm getting the hang of this. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Hanoi](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hanoi.hs)
+
+[Log parser](https://github.com/Holland-k/Local-100-days/blob/master/haskell/LogAnalysis.hs)
 
 ### Day 18: July 6, 2018
 
