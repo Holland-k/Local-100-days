@@ -1,12 +1,17 @@
 import Data.List
 -- doesn't work properly
+skip :: [a] -> Int -> [[a]]
+skip [] _ = []
+skip a n = [head a : d] ++ skip (tail a) (n+1)
+    where d = [b | (b,c) <- zip (tail a) [1..((length a) -1)], c `mod` n == 0]
+
 skips :: [a] -> [[a]]
 skips [] = [[]]
-skips a = a : skips [b | (b,c) <- zip a [1..length(a)], even c]
+skips a = [a] ++ skip (tail a) 2
 
 localMaxima :: [Integer] -> [Integer]
 localMaxima (a:b:c:xs) = if (b > a) && (b > c) then b:y else y
-	where y = localMaxima(b:c:xs)
+    where y = localMaxima(b:c:xs)
 localMaxima _ = []
 
 histGraph :: Int -> String
