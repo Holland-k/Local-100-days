@@ -157,11 +157,11 @@
 
 ### Day 18: July 6, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Skip (broken) and localmaxima
 
-**Thoughts:** 
+**Thoughts:** meh
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Golf](https://github.com/Holland-k/Local-100-days/blob/master/haskell/golf.hs)
 
 ### Day 19: July 7, 2018
 
