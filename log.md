@@ -165,11 +165,11 @@
 
 ### Day 19: July 7, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Finished histogram. Fixed skips.
 
-**Thoughts:** 
+**Thoughts:** Pretty happy with both solutions. May not be the shortest code, but feel like I am actually using haskell to solve them and not just working around it.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Golf](https://github.com/Holland-k/Local-100-days/blob/master/haskell/golf.hs)
 
 ### Day 20: July 8, 2018
 
