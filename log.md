@@ -173,19 +173,19 @@
 
 ### Day 20: July 8, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 21: July 9, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Work with fold.
 
-**Thoughts:** 
+**Thoughts:** I really don't like fold.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 22: July 10, 2018
 
