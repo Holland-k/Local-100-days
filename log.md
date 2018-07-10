@@ -185,15 +185,15 @@
 
 **Thoughts:** I really don't like fold.
 
-**Link to work:** 
+**Link to work:** [High-ordered functions](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hww4.hs)
 
 ### Day 22: July 10, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Finished week 4. Kinda.
 
-**Thoughts:** 
+**Thoughts:** Lots of looking at examples to finish out the problems. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [High-ordered functions](https://github.com/Holland-k/Local-100-days/blob/master/haskell/hww4.hs)
 
 ### Day 23: July 11, 2018
 
