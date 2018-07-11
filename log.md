@@ -197,11 +197,11 @@
 
 ### Day 23: July 11, 2018
 
-**Today's Progress**: 
+**Today's Progress**: More CIS 194 work, now with type classes.
 
-**Thoughts:** 
+**Thoughts:** I'm not great at this, but not as bad as I am at fold.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Calculator](https://github.com/Holland-k/Local-100-days/blob/master/haskell/calc.hs)
 
 ### Day 24: July 12, 2018
 
