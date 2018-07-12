@@ -205,11 +205,11 @@
 
 ### Day 24: July 12, 2018
 
-**Today's Progress**: 
+**Today's Progress**: More work on CIS 194.
 
 **Thoughts:** 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** Calculator](https://github.com/Holland-k/Local-100-days/blob/master/haskell/calc.hs)
 
 ### Day 25: July 13, 2018
 
