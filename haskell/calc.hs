@@ -1,7 +1,10 @@
+{-# LANGUAGE TypeSynonymInstances #-}
+
 module Calc where
 
 import ExprT 
 import Parser
+import StackVM
 
 class Expr a where 
     lit :: Integer -> a
@@ -10,8 +13,8 @@ class Expr a where
 
 instance Expr ExprT where 
     lit = Lit 
-    add = Add 
-    mul = Mul
+    add = ExprT.Add 
+    mul = ExprT.Mul
 
 newtype MinMax = MinMax Integer deriving (Eq, Show)
 newtype Mod7 = Mod7 Integer deriving (Eq, Show)
@@ -38,11 +41,11 @@ instance Expr Mod7 where
 
 eval :: ExprT -> Integer
 eval (Lit t) = t
-eval (Add x y) = (eval x) + (eval y)
-eval (Mul x y) = (eval x) * (eval y)
+eval (ExprT.Add x y) = (eval x) + (eval y)
+eval (ExprT.Mul x y) = (eval x) * (eval y)
 
 evalStr :: String -> Maybe Integer
-evalStr x = case parseExp Lit Add Mul x of 
+evalStr x = case parseExp Lit ExprT.Add ExprT.Mul x of 
     (Just a) -> Just (eval a)
     Nothing -> Nothing
 
@@ -51,3 +54,15 @@ reify = id
 
 testExp :: Expr a => Maybe a
 testExp = parseExp lit add mul "(3 * -4) + 5"
+
+instance Expr StackVM.Program where
+    lit i = if i == True || i == False 
+        then [StackVM.PushB i]
+        else [StackVM.PushI i]
+    add a b = a ++ b ++ [StackVM.Add]
+    mul a b = a ++ b ++ [StackVM.Mul]
+    -- and a b = a ++ b ++ [StackVM.And]
+    -- or a b = a ++ b ++ [StackVM.Or]
+
+compile :: String -> Maybe Program
+compile x = parseExp PushI PushB StackVM.Add StackVM.Mul And Or x 
