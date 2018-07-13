@@ -209,15 +209,17 @@
 
 **Thoughts:** 
 
-**Link to work:** Calculator](https://github.com/Holland-k/Local-100-days/blob/master/haskell/calc.hs)
+**Link to work:** [Calculator](https://github.com/Holland-k/Local-100-days/blob/master/haskell/calc.hs)
 
 ### Day 25: July 13, 2018
 
-**Today's Progress**: 
+**Today's Progress**: More CIS work, types and laziness.
 
-**Thoughts:** 
+**Thoughts:** Still don't have the hang of types. Laziness seems a bit better. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Calculator](https://github.com/Holland-k/Local-100-days/blob/master/haskell/calc.hs)
+
+[Fibonacci.hs](https://github.com/Holland-k/Local-100-days/blob/master/haskell/Fibonacci.hs)
 
 ### Day 26: July 14, 2018
 
