@@ -19,3 +19,16 @@ instance Show a => Show (Stream a) where
 
 streamToList :: Stream a -> [a]
 streamToList (Cons a b) = a : streamToList b
+
+streamRepeat :: a -> Stream a
+streamRepeat a = a : streamRepeat a
+
+streamMap :: (a -> b) -> Stream a -> Stream b
+streamMap (a:as) b = b a : streamMap as b
+
+streamFromSeed :: (a -> a) -> a -> Stream a
+streamFromSeed f a = a : StreamFromSeed f (f a)
+
+nats :: Stream Integer
+nats = streamFromSeed (+1) 0
+
