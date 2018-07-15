@@ -223,11 +223,11 @@
 
 ### Day 26: July 14, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Exercisms, Leetcode, and CIS.
 
-**Thoughts:** 
+**Thoughts:** Really rusty at python, and not good at coding competitions.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Fibonacci.hs](https://github.com/Holland-k/Local-100-days/blob/master/haskell/Fibonacci.hs)
 
 ### Day 27: July 15, 2018
 
