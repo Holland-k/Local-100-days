@@ -21,14 +21,20 @@ streamToList :: Stream a -> [a]
 streamToList (Cons a b) = a : streamToList b
 
 streamRepeat :: a -> Stream a
-streamRepeat a = a : streamRepeat a
+streamRepeat a = Cons a (streamRepeat a)
 
 streamMap :: (a -> b) -> Stream a -> Stream b
-streamMap (a:as) b = b a : streamMap as b
+streamMap b (Cons a as) = Cons (b a) (streamMap b as)
 
 streamFromSeed :: (a -> a) -> a -> Stream a
-streamFromSeed f a = a : StreamFromSeed f (f a)
+streamFromSeed f a = Cons a (streamFromSeed f (f a))
 
 nats :: Stream Integer
 nats = streamFromSeed (+1) 0
+
+interleaveStreams :: Stream a -> Stream a -> Stream a
+interleaveStreams (Cons a as) bs = (Cons a) (interleaveStreams as bs)
+
+-- ruler :: Stream Integer
+
 
