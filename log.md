@@ -231,11 +231,11 @@
 
 ### Day 27: July 15, 2018
 
-**Today's Progress**: 
+**Today's Progress**: CIS barely.
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Fibonacci.hs](https://github.com/Holland-k/Local-100-days/blob/master/haskell/Fibonacci.hs)
 
 ### Day 28: July 16, 2018
 
