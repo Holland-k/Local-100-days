@@ -239,11 +239,13 @@
 
 ### Day 28: July 16, 2018
 
-**Today's Progress**: 
+**Today's Progress**: Exercism exercises. Space Age, Nucleotide counting, and fixed Hamming.
 
-**Thoughts:** 
+**Thoughts:** That's some ugly-ass solutions. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** [Space Age](https://github.com/Holland-k/Local-100-days/tree/master/exercism/haskell/space-age/src)
+
+[Nucleotide Count](https://github.com/Holland-k/Local-100-days/tree/master/exercism/haskell/nucleotide-count/src)
 
 ### Day 29: July 17, 2018
 
