@@ -249,27 +249,27 @@
 
 ### Day 29: July 17, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None.
 
-**Thoughts:** 
+**Thoughts:** None.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 30: July 18, 2018
 
-**Today's Progress**: 
+**Today's Progress**: None
 
-**Thoughts:** 
+**Thoughts:** None
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 31: July 19, 2018
 
-**Today's Progress**: 
+**Today's Progress**: More exercism.
 
-**Thoughts:** 
+**Thoughts:** Not much to report really. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** 
 
 ### Day 32: July 20, 2018
 
