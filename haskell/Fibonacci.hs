@@ -33,8 +33,11 @@ nats :: Stream Integer
 nats = streamFromSeed (+1) 0
 
 interleaveStreams :: Stream a -> Stream a -> Stream a
-interleaveStreams (Cons a as) bs = (Cons a) (interleaveStreams as bs)
+interleaveStreams (Cons a as) bs = (Cons a) (interleaveStreams bs as)
 
--- ruler :: Stream Integer
+rulerGen :: Integer -> Stream Integer
+rulerGen x = interleaveStreams (streamRepeat x) (rulerGen (x+1))
 
+ruler :: Stream Integer
+ruler = rulerGen 0
 
