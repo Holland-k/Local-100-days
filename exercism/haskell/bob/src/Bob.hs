@@ -3,13 +3,13 @@ module Bob (responseFor) where
 import Data.Char
 
 shouting :: String -> Bool
-shouting x = (and $ map (isUpper) $ filter (isAlpha) x) && (or $ map (\y -> isUpper y) x)
+shouting x = (all (isUpper) $ filter (isAlpha) x) && (any (\y -> isUpper y) x)
 
 question :: String -> Bool
-question x = '?' == (head $ dropWhile (isSpace) $ reverse x)
+question x = "?" == (take 1 $ dropWhile (isSpace) $ reverse x)
 
 silence :: String -> Bool
-silence x = x == "" || (and $ map (isSpace) x)
+silence x = x == "" || (all (isSpace) x)
 
 responseFor :: String -> String
 responseFor xs 
