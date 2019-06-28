@@ -6,14 +6,14 @@
 [Suder](https://www.leagle.com/decision/intco20141001e65) - CEO's compensation limited, but ultimately allowed as qualified activity.
 
 ## Emails:
-[Why we shouldn't decide what is reasonable](broken link here)
+[Why we shouldn't decide what is reasonable](local.doc)
 
 ## IDR responses
-[X client](broken link here) - Argued client's president was reasonable  
+[X client](local2.doc) - Argued client's president was reasonable  
 
-[Y client](broken link here)  
+[Y client](local.pdf)  
 
-[Z client](broken link here)
+[Z client](local2.pdf)
 
 
 
