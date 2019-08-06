@@ -1,3 +1,24 @@
+# Reasonable Compensation
+
+---
+
+## Court cases:
+[Suder](https://www.leagle.com/decision/intco20141001e65) - CEO's compensation limited, but ultimately allowed as qualified activity.
+
+## Emails:
+[Why we shouldn't decide what is reasonable](local.doc)
+
+## IDR responses
+[X client](local2.doc) - Argued client's president was reasonable  
+
+[Y client](local.pdf)  
+
+[Z client](local2.pdf)
+
+
+
+
+
 # 100 Days Of Code - Log
 
 ### Day 0: June 18, 2018
